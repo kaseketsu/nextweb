@@ -1,0 +1,37 @@
+/* prettier-ignore */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Satoshi Variable";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    src: url(/fonts/Roboto.woff2) format("woff2");
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --tip-popover-color: #434360;
+  --chat-panel-bg: rgb(249, 250, 251, 1);
+  --siderbar-mobile-height: 3.125rem;
+  --max-message-width: calc(var(--chat-panel-max-width) * 0.6);
+}
+
+input {
+  text-align: inherit;
+  background-color: inherit;
+}
